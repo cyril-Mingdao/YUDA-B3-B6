@@ -1,0 +1,4 @@
+/*! fonts/tauhu.css — 罕用台語漢字補字 — © 2026 詹宗龍（臺中明道中學）
+ * 字型：豆腐烏 Tauhu Oo 20.05 子集（https://tauhu.tw/ ，SIL Open Font License 1.1，見 OFL.txt），
+ * 由 taigi-tauhu-font skill 的 tauhu_subset.py 產生，請勿手改。 */
+@font-face{font-family:"TaigiRare";src:url("taigi-rare.woff2") format("woff2");font-weight:400;font-display:swap;unicode-range:U+28468}
