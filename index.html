@@ -615,8 +615,10 @@
         if (push) history.replaceState(null, '', '#' + id);
     }
     tabs.forEach(function (t) { t.addEventListener('click', function () { show(t.getAttribute('aria-controls'), true); }); });
-    window.addEventListener('hashchange', function () { show(location.hash.slice(1)); });
+    window.addEventListener('hashchange', function () { show(location.hash.slice(1)); window.scrollTo(0, 0); });
     show(location.hash.slice(1));
+    // 帶 #YUDA-B? 進來時瀏覽器會捲到該冊卡片區，把標題列與冊別鈕捲出畫面：載入後捲回頂端
+    if (location.hash) window.addEventListener('load', function () { setTimeout(function () { window.scrollTo(0, 0); }, 0); });
 })();
 </script>
 </body>
